@@ -28,15 +28,16 @@ argument-hint: "[--scale 小|中|大] task description"
 
 **如果参数为空：** 从最近的对话上下文提取任务描述。如果仍然无法确定，请用户提供。
 
-**创建会话目录：**
+**创建会话目录（必须执行，不可跳过）：**
 从任务描述提取 2-4 个英文关键词作为 slug（kebab-case，不超过 30 字符），生成：
 
 ```bash
 SESSION_DIR=".tmp/swcc/$(date +%Y-%m-%d)-{slug}"
-mkdir -p "$SESSION_DIR"
 ```
 
 例如任务 "add user authentication" → `.tmp/swcc/2026-03-10-add-user-auth/`
+
+**⚠️ 你必须立即用 Bash 工具执行 `mkdir -p "$SESSION_DIR"`，确认目录已创建后再进入下一步。** 不要把文件直接写到 `.tmp/swcc/` 根目录——所有产物必须写入子目录。
 
 后续所有 agent 的输出路径都基于 `SESSION_DIR`。
 

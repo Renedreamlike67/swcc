@@ -58,6 +58,10 @@ claude plugins install swcc
 
 坐好，看戏。
 
+<p align="center">
+  <img src="docs/image.png" alt="SWCC 实际运行效果" width="700">
+</p>
+
 ## 🏛️ 全流程工作流
 
 <p align="center">
