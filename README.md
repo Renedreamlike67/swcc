@@ -49,8 +49,8 @@
 
 ```bash
 # 安装
-claude plugins marketplace add ylxmf2005/swcc
-claude plugins install swcc@swcc
+/plugins marketplace add ylxmf2005/swcc # In Claude Code
+/plugins install swcc
 
 # 在任意项目中
 /zhili 给这个项目加 JWT 认证
@@ -156,20 +156,6 @@ claude plugins install swcc@swcc
 | `/zhiku` | **智库调研** — 按需研究任意问题 | `/zhiku 调研问题` |
 
 > 💡 **每个技能都可以单独使用。** 不一定要走全流程——想调研就 `/zhiku`，想只看方案就 `/xieshang`，想直接干就 `/zhixing`，想 review 就 `/jicha`，想先探索问题就 `/zhengyanshi`。按需组合，灵活使用。
-
-## 📦 安装
-
-```bash
-# 方式一：从 GitHub 安装
-claude plugins marketplace add ylxmf2005/swcc
-claude plugins install swcc
-
-# 方式二：本地安装
-git clone https://github.com/ylxmf2005/swcc.git
-claude plugins install --path ./swcc
-```
-
-零依赖。不需要 Python，不需要 Docker，不需要 OpenClaw。装上就用。
 
 ## 📁 产物
 
